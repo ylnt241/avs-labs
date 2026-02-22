@@ -48,13 +48,13 @@ int main() {
   printf("Please, write your input: ");
   n = scanf("%d", &int_buffer);
   flush_buffer();
-  if (n != 1) {
-    printf("Invalid Input!\n");
-    return (1);
-  }
   if (n == EOF) {
     printf("\n");
     return 0;
+  }
+  if (n != 1) {
+    printf("Invalid Input!\n");
+    return 1;
   }
   float_buffer = (float)int_buffer;
   double_buffer = (double)int_buffer;
