@@ -52,6 +52,10 @@ int main() {
     printf("Invalid Input!\n");
     return (1);
   }
+  if (n == EOF) {
+    printf("\n");
+    return 0;
+  }
   float_buffer = (float)int_buffer;
   double_buffer = (double)int_buffer;
 
